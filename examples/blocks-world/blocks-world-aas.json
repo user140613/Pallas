@@ -1,0 +1,2121 @@
+{
+  "assetAdministrationShells" : [ {
+    "modelType" : "AssetAdministrationShell",
+    "assetInformation" : {
+      "assetKind" : "Instance",
+      "assetType" : "KTF_Planning_Domain",
+      "globalAssetId" : "KTF_Planning_Domain"
+    },
+    "submodels" : [ {
+      "keys" : [ {
+        "type" : "Submodel",
+        "value" : "PlanningDomainMetaData"
+      } ],
+      "type" : "ExternalReference"
+    } ],
+    "id" : "null",
+    "idShort" : "null"
+  } ],
+  "submodels" : [ {
+    "modelType" : "Submodel",
+    "kind" : "Instance",
+    "id" : "PlanningDomainMetaData",
+    "idShort" : "PlanningDomainMetaData",
+    "submodelElements" : [ {
+      "modelType" : "Property",
+      "value" : "blocksworld_domain",
+      "valueType" : "xs:string",
+      "idShort" : "Name"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "Types",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementCollection",
+      "value" : [ {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "Boolean",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "Boolean",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "ReferenceElement",
+          "idShort" : "SuperType",
+          "value" : {
+            "keys" : [ {
+              "type" : "Submodel",
+              "value" : "PlanningDomainMetaData"
+            }, {
+              "type" : "SubmodelElementList",
+              "value" : "Types"
+            }, {
+              "type" : "SubmodelElementCollection",
+              "value" : "root"
+            } ],
+            "type" : "ModelReference"
+          }
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "block",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "block",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "ReferenceElement",
+          "idShort" : "SuperType",
+          "value" : {
+            "keys" : [ {
+              "type" : "Submodel",
+              "value" : "PlanningDomainMetaData"
+            }, {
+              "type" : "SubmodelElementList",
+              "value" : "Types"
+            }, {
+              "type" : "SubmodelElementCollection",
+              "value" : "root"
+            } ],
+            "type" : "ModelReference"
+          }
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "root",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "root",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "ReferenceElement",
+          "idShort" : "SuperType",
+          "value" : {
+            "keys" : [ {
+              "type" : "Submodel",
+              "value" : "PlanningDomainMetaData"
+            }, {
+              "type" : "SubmodelElementList",
+              "value" : "Types"
+            }, {
+              "type" : "SubmodelElementCollection",
+              "value" : "null"
+            } ],
+            "type" : "ModelReference"
+          }
+        } ]
+      } ]
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "PlanningConstants",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementCollection"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "PlanningObjects",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementCollection"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "Predicates",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementCollection",
+      "value" : [ {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "Holding",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "Holding",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementCollection",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "On",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "On",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementCollection",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          }, {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block2",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block2",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "OnGround",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "OnGround",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementCollection",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "TopClear",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "TopClear",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementCollection",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "Functions",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "FunctionValues",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "Actions",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList",
+      "value" : [ {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "pick-up-from-block",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "pick-up-from-block",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          }, {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block2",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block2",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "PreConditions",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "On",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "On"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  }, {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block2",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block2"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "TopClear",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "TopClear"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "FORALL",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "FORALL",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementCollection",
+                  "idShort" : "Parameter",
+                  "value" : [ {
+                    "modelType" : "Property",
+                    "value" : "block3",
+                    "valueType" : "xs:string",
+                    "idShort" : "Name"
+                  }, {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "Type",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Types"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "NOT",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "NOT",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "LogicalExpression",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "SubmodelElementList",
+                      "value" : [ {
+                        "modelType" : "SubmodelElementCollection",
+                        "idShort" : "Holding",
+                        "value" : [ {
+                          "modelType" : "Property",
+                          "value" : "PREDICATE",
+                          "valueType" : "xs:string",
+                          "idShort" : "Operator"
+                        }, {
+                          "modelType" : "Property",
+                          "value" : "AT_START",
+                          "valueType" : "xs:string",
+                          "idShort" : "TemporalOperator"
+                        }, {
+                          "modelType" : "ReferenceElement",
+                          "idShort" : "Predicate",
+                          "value" : {
+                            "keys" : [ {
+                              "type" : "Submodel",
+                              "value" : "PlanningDomainMetaData"
+                            }, {
+                              "type" : "SubmodelElementList",
+                              "value" : "Predicates"
+                            }, {
+                              "type" : "SubmodelElementCollection",
+                              "value" : "Holding"
+                            } ],
+                            "type" : "ModelReference"
+                          }
+                        }, {
+                          "modelType" : "SubmodelElementList",
+                          "idShort" : "Parameters",
+                          "orderRelevant" : true,
+                          "typeValueListElement" : "ReferenceElement",
+                          "value" : [ {
+                            "modelType" : "SubmodelElementCollection",
+                            "idShort" : "localParameter",
+                            "value" : [ {
+                              "modelType" : "Property",
+                              "value" : "block3",
+                              "valueType" : "xs:string",
+                              "idShort" : "Name"
+                            }, {
+                              "modelType" : "ReferenceElement",
+                              "idShort" : "Type",
+                              "value" : {
+                                "keys" : [ {
+                                  "type" : "Submodel",
+                                  "value" : "PlanningDomainMetaData"
+                                }, {
+                                  "type" : "SubmodelElementList",
+                                  "value" : "Types"
+                                }, {
+                                  "type" : "SubmodelElementCollection",
+                                  "value" : "block"
+                                } ],
+                                "type" : "ModelReference"
+                              }
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Effects",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "NOT",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "NOT",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "On",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "PREDICATE",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "Property",
+                      "value" : "AT_START",
+                      "valueType" : "xs:string",
+                      "idShort" : "TemporalOperator"
+                    }, {
+                      "modelType" : "ReferenceElement",
+                      "idShort" : "Predicate",
+                      "value" : {
+                        "keys" : [ {
+                          "type" : "Submodel",
+                          "value" : "PlanningDomainMetaData"
+                        }, {
+                          "type" : "SubmodelElementList",
+                          "value" : "Predicates"
+                        }, {
+                          "type" : "SubmodelElementCollection",
+                          "value" : "On"
+                        } ],
+                        "type" : "ModelReference"
+                      }
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "Parameters",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "ReferenceElement",
+                      "value" : [ {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block1",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "pick-up-from-block"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block1"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      }, {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block2",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "pick-up-from-block"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block2"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "TopClear",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "TopClear"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block2",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block2"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "Holding",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_END",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "Holding"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Costs",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Durations",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "pick-up-from-ground",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "pick-up-from-ground",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "PreConditions",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "TopClear",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "TopClear"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-ground"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "OnGround",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "OnGround"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-ground"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "FORALL",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "FORALL",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementCollection",
+                  "idShort" : "Parameter",
+                  "value" : [ {
+                    "modelType" : "Property",
+                    "value" : "block2",
+                    "valueType" : "xs:string",
+                    "idShort" : "Name"
+                  }, {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "Type",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Types"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "NOT",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "NOT",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "LogicalExpression",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "SubmodelElementList",
+                      "value" : [ {
+                        "modelType" : "SubmodelElementCollection",
+                        "idShort" : "Holding",
+                        "value" : [ {
+                          "modelType" : "Property",
+                          "value" : "PREDICATE",
+                          "valueType" : "xs:string",
+                          "idShort" : "Operator"
+                        }, {
+                          "modelType" : "Property",
+                          "value" : "AT_START",
+                          "valueType" : "xs:string",
+                          "idShort" : "TemporalOperator"
+                        }, {
+                          "modelType" : "ReferenceElement",
+                          "idShort" : "Predicate",
+                          "value" : {
+                            "keys" : [ {
+                              "type" : "Submodel",
+                              "value" : "PlanningDomainMetaData"
+                            }, {
+                              "type" : "SubmodelElementList",
+                              "value" : "Predicates"
+                            }, {
+                              "type" : "SubmodelElementCollection",
+                              "value" : "Holding"
+                            } ],
+                            "type" : "ModelReference"
+                          }
+                        }, {
+                          "modelType" : "SubmodelElementList",
+                          "idShort" : "Parameters",
+                          "orderRelevant" : true,
+                          "typeValueListElement" : "ReferenceElement",
+                          "value" : [ {
+                            "modelType" : "SubmodelElementCollection",
+                            "idShort" : "localParameter",
+                            "value" : [ {
+                              "modelType" : "Property",
+                              "value" : "block2",
+                              "valueType" : "xs:string",
+                              "idShort" : "Name"
+                            }, {
+                              "modelType" : "ReferenceElement",
+                              "idShort" : "Type",
+                              "value" : {
+                                "keys" : [ {
+                                  "type" : "Submodel",
+                                  "value" : "PlanningDomainMetaData"
+                                }, {
+                                  "type" : "SubmodelElementList",
+                                  "value" : "Types"
+                                }, {
+                                  "type" : "SubmodelElementCollection",
+                                  "value" : "block"
+                                } ],
+                                "type" : "ModelReference"
+                              }
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Effects",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "NOT",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "NOT",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "OnGround",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "PREDICATE",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "Property",
+                      "value" : "AT_END",
+                      "valueType" : "xs:string",
+                      "idShort" : "TemporalOperator"
+                    }, {
+                      "modelType" : "ReferenceElement",
+                      "idShort" : "Predicate",
+                      "value" : {
+                        "keys" : [ {
+                          "type" : "Submodel",
+                          "value" : "PlanningDomainMetaData"
+                        }, {
+                          "type" : "SubmodelElementList",
+                          "value" : "Predicates"
+                        }, {
+                          "type" : "SubmodelElementCollection",
+                          "value" : "OnGround"
+                        } ],
+                        "type" : "ModelReference"
+                      }
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "Parameters",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "ReferenceElement",
+                      "value" : [ {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block1",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "pick-up-from-ground"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block1"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "Holding",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_END",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "Holding"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "pick-up-from-ground"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Costs",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Durations",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "put-down-on-block",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "put-down-on-block",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          }, {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block2",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block2",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "PreConditions",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "Holding",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "Holding"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "TopClear",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "TopClear"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block2",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block2"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Effects",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "NOT",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "NOT",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "TopClear",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "PREDICATE",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "Property",
+                      "value" : "AT_END",
+                      "valueType" : "xs:string",
+                      "idShort" : "TemporalOperator"
+                    }, {
+                      "modelType" : "ReferenceElement",
+                      "idShort" : "Predicate",
+                      "value" : {
+                        "keys" : [ {
+                          "type" : "Submodel",
+                          "value" : "PlanningDomainMetaData"
+                        }, {
+                          "type" : "SubmodelElementList",
+                          "value" : "Predicates"
+                        }, {
+                          "type" : "SubmodelElementCollection",
+                          "value" : "TopClear"
+                        } ],
+                        "type" : "ModelReference"
+                      }
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "Parameters",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "ReferenceElement",
+                      "value" : [ {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block2",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "put-down-on-block"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block2"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "NOT",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "NOT",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "Holding",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "PREDICATE",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "Property",
+                      "value" : "AT_START",
+                      "valueType" : "xs:string",
+                      "idShort" : "TemporalOperator"
+                    }, {
+                      "modelType" : "ReferenceElement",
+                      "idShort" : "Predicate",
+                      "value" : {
+                        "keys" : [ {
+                          "type" : "Submodel",
+                          "value" : "PlanningDomainMetaData"
+                        }, {
+                          "type" : "SubmodelElementList",
+                          "value" : "Predicates"
+                        }, {
+                          "type" : "SubmodelElementCollection",
+                          "value" : "Holding"
+                        } ],
+                        "type" : "ModelReference"
+                      }
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "Parameters",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "ReferenceElement",
+                      "value" : [ {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block1",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "put-down-on-block"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block1"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "On",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_END",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "On"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  }, {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block2",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-block"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block2"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Costs",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Durations",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        } ]
+      }, {
+        "modelType" : "SubmodelElementCollection",
+        "idShort" : "put-down-on-ground",
+        "value" : [ {
+          "modelType" : "Property",
+          "value" : "put-down-on-ground",
+          "valueType" : "xs:string",
+          "idShort" : "Name"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Parameters",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "block1",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "block1",
+              "valueType" : "xs:string",
+              "idShort" : "Name"
+            }, {
+              "modelType" : "ReferenceElement",
+              "idShort" : "Type",
+              "value" : {
+                "keys" : [ {
+                  "type" : "Submodel",
+                  "value" : "PlanningDomainMetaData"
+                }, {
+                  "type" : "SubmodelElementList",
+                  "value" : "Types"
+                }, {
+                  "type" : "SubmodelElementCollection",
+                  "value" : "block"
+                } ],
+                "type" : "ModelReference"
+              }
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "PreConditions",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "Holding",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_START",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "Holding"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-ground"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Effects",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList",
+          "value" : [ {
+            "modelType" : "SubmodelElementCollection",
+            "idShort" : "AND",
+            "value" : [ {
+              "modelType" : "Property",
+              "value" : "AND",
+              "valueType" : "xs:string",
+              "idShort" : "Operator"
+            }, {
+              "modelType" : "SubmodelElementList",
+              "idShort" : "LogicalExpression",
+              "orderRelevant" : true,
+              "typeValueListElement" : "SubmodelElementList",
+              "value" : [ {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "OnGround",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "PREDICATE",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "Property",
+                  "value" : "AT_END",
+                  "valueType" : "xs:string",
+                  "idShort" : "TemporalOperator"
+                }, {
+                  "modelType" : "ReferenceElement",
+                  "idShort" : "Predicate",
+                  "value" : {
+                    "keys" : [ {
+                      "type" : "Submodel",
+                      "value" : "PlanningDomainMetaData"
+                    }, {
+                      "type" : "SubmodelElementList",
+                      "value" : "Predicates"
+                    }, {
+                      "type" : "SubmodelElementCollection",
+                      "value" : "OnGround"
+                    } ],
+                    "type" : "ModelReference"
+                  }
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "Parameters",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "ReferenceElement",
+                  "value" : [ {
+                    "modelType" : "ReferenceElement",
+                    "idShort" : "block1",
+                    "value" : {
+                      "keys" : [ {
+                        "type" : "Submodel",
+                        "value" : "PlanningDomainMetaData"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Actions"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "put-down-on-ground"
+                      }, {
+                        "type" : "SubmodelElementList",
+                        "value" : "Parameters"
+                      }, {
+                        "type" : "SubmodelElementCollection",
+                        "value" : "block1"
+                      } ],
+                      "type" : "ModelReference"
+                    }
+                  } ]
+                } ]
+              }, {
+                "modelType" : "SubmodelElementCollection",
+                "idShort" : "NOT",
+                "value" : [ {
+                  "modelType" : "Property",
+                  "value" : "NOT",
+                  "valueType" : "xs:string",
+                  "idShort" : "Operator"
+                }, {
+                  "modelType" : "SubmodelElementList",
+                  "idShort" : "LogicalExpression",
+                  "orderRelevant" : true,
+                  "typeValueListElement" : "SubmodelElementList",
+                  "value" : [ {
+                    "modelType" : "SubmodelElementCollection",
+                    "idShort" : "Holding",
+                    "value" : [ {
+                      "modelType" : "Property",
+                      "value" : "PREDICATE",
+                      "valueType" : "xs:string",
+                      "idShort" : "Operator"
+                    }, {
+                      "modelType" : "Property",
+                      "value" : "AT_END",
+                      "valueType" : "xs:string",
+                      "idShort" : "TemporalOperator"
+                    }, {
+                      "modelType" : "ReferenceElement",
+                      "idShort" : "Predicate",
+                      "value" : {
+                        "keys" : [ {
+                          "type" : "Submodel",
+                          "value" : "PlanningDomainMetaData"
+                        }, {
+                          "type" : "SubmodelElementList",
+                          "value" : "Predicates"
+                        }, {
+                          "type" : "SubmodelElementCollection",
+                          "value" : "Holding"
+                        } ],
+                        "type" : "ModelReference"
+                      }
+                    }, {
+                      "modelType" : "SubmodelElementList",
+                      "idShort" : "Parameters",
+                      "orderRelevant" : true,
+                      "typeValueListElement" : "ReferenceElement",
+                      "value" : [ {
+                        "modelType" : "ReferenceElement",
+                        "idShort" : "block1",
+                        "value" : {
+                          "keys" : [ {
+                            "type" : "Submodel",
+                            "value" : "PlanningDomainMetaData"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Actions"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "put-down-on-ground"
+                          }, {
+                            "type" : "SubmodelElementList",
+                            "value" : "Parameters"
+                          }, {
+                            "type" : "SubmodelElementCollection",
+                            "value" : "block1"
+                          } ],
+                          "type" : "ModelReference"
+                        }
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Costs",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        }, {
+          "modelType" : "SubmodelElementList",
+          "idShort" : "Durations",
+          "orderRelevant" : true,
+          "typeValueListElement" : "SubmodelElementList"
+        } ]
+      } ]
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "InitialState",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "GoalState",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList"
+    }, {
+      "modelType" : "SubmodelElementList",
+      "idShort" : "Metrics",
+      "orderRelevant" : true,
+      "typeValueListElement" : "SubmodelElementList"
+    } ]
+  } ]
+}

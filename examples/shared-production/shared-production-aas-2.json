@@ -1,0 +1,1429 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "null",
+      "id": "null",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "KTF_Planning_Domain",
+        "assetType": "KTF_Planning_Domain"
+      },
+      "submodels": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "PlanningDomainMetaData"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "PlanningDomainMetaData",
+      "id": "PlanningDomainMetaData",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "Actions",
+          "orderRelevant": true,
+          "typeValueListElement": "SubmodelElementList",
+          "value": [
+            {
+              "idShort": "Print_Workpiece",
+              "value": [
+                {
+                  "idShort": "Name",
+                  "valueType": "xs:string",
+                  "value": "Print_Workpiece",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "Parameters",
+                  "orderRelevant": true,
+                  "typeValueListElement": "SubmodelElementList",
+                  "value": [
+                    {
+                      "idShort": "Factory",
+                      "value": [
+                        {
+                          "idShort": "Name",
+                          "valueType": "xs:string",
+                          "value": "Factory",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "Type",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Types"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "Factory"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "Workpiece",
+                      "value": [
+                        {
+                          "idShort": "Name",
+                          "valueType": "xs:string",
+                          "value": "Workpiece",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "Type",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Types"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "Workpiece"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "Machine",
+                      "value": [
+                        {
+                          "idShort": "Name",
+                          "valueType": "xs:string",
+                          "value": "Machine",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "Type",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Types"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "Printer"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "Material",
+                      "value": [
+                        {
+                          "idShort": "Name",
+                          "valueType": "xs:string",
+                          "value": "Material",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "Type",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Types"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "Material"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementList"
+                },
+                {
+                  "idShort": "PreConditions",
+                  "orderRelevant": true,
+                  "typeValueListElement": "SubmodelElementList",
+                  "value": [
+                    {
+                      "idShort": "AND",
+                      "value": [
+                        {
+                          "idShort": "Operator",
+                          "valueType": "xs:string",
+                          "value": "AND",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "LogicalExpression",
+                          "orderRelevant": true,
+                          "typeValueListElement": "SubmodelElementList",
+                          "value": [
+                            {
+                              "idShort": "InFactory",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "OVER_ALL",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "InFactory"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Machine",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Machine"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Factory",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Factory"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "IsAvailable",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_START",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "IsAvailable"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Factory",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Factory"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "NOT",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "NOT",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "LogicalExpression",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "SubmodelElementList",
+                                  "value": [
+                                    {
+                                      "idShort": "IsPrinted",
+                                      "value": [
+                                        {
+                                          "idShort": "Operator",
+                                          "valueType": "xs:string",
+                                          "value": "PREDICATE",
+                                          "modelType": "Property"
+                                        },
+                                        {
+                                          "idShort": "TemporalOperator",
+                                          "valueType": "xs:string",
+                                          "value": "AT_START",
+                                          "modelType": "Property"
+                                        },
+                                        {
+                                          "idShort": "Predicate",
+                                          "value": {
+                                            "type": "ModelReference",
+                                            "keys": [
+                                              {
+                                                "type": "Submodel",
+                                                "value": "PlanningDomainMetaData"
+                                              },
+                                              {
+                                                "type": "SubmodelElementList",
+                                                "value": "Predicates"
+                                              },
+                                              {
+                                                "type": "SubmodelElementCollection",
+                                                "value": "IsPrinted"
+                                              }
+                                            ]
+                                          },
+                                          "modelType": "ReferenceElement"
+                                        },
+                                        {
+                                          "idShort": "Parameters",
+                                          "orderRelevant": true,
+                                          "typeValueListElement": "ReferenceElement",
+                                          "value": [
+                                            {
+                                              "idShort": "Workpiece",
+                                              "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                  {
+                                                    "type": "Submodel",
+                                                    "value": "PlanningDomainMetaData"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Actions"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Print_Workpiece"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Parameters"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Workpiece"
+                                                  }
+                                                ]
+                                              },
+                                              "modelType": "ReferenceElement"
+                                            }
+                                          ],
+                                          "modelType": "SubmodelElementList"
+                                        }
+                                      ],
+                                      "modelType": "SubmodelElementCollection"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "IsReady",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_START",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "IsReady"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Machine",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Machine"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "CanPrint",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_START",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "CanPrint"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Machine",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Machine"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Material",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Material"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementList"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementList"
+                },
+                {
+                  "idShort": "Effects",
+                  "orderRelevant": true,
+                  "typeValueListElement": "SubmodelElementList",
+                  "value": [
+                    {
+                      "idShort": "AND",
+                      "value": [
+                        {
+                          "idShort": "Operator",
+                          "valueType": "xs:string",
+                          "value": "AND",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "LogicalExpression",
+                          "orderRelevant": true,
+                          "typeValueListElement": "SubmodelElementList",
+                          "value": [
+                            {
+                              "idShort": "At",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_END",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "At"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Workpiece",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Workpiece"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Machine",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Machine"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "IsMadeOf",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_END",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "IsMadeOf"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Workpiece",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Workpiece"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Material",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Material"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "IsPrinted",
+                              "value": [
+                                {
+                                  "idShort": "Operator",
+                                  "valueType": "xs:string",
+                                  "value": "PREDICATE",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "TemporalOperator",
+                                  "valueType": "xs:string",
+                                  "value": "AT_END",
+                                  "modelType": "Property"
+                                },
+                                {
+                                  "idShort": "Predicate",
+                                  "value": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "Submodel",
+                                        "value": "PlanningDomainMetaData"
+                                      },
+                                      {
+                                        "type": "SubmodelElementList",
+                                        "value": "Predicates"
+                                      },
+                                      {
+                                        "type": "SubmodelElementCollection",
+                                        "value": "IsPrinted"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "ReferenceElement"
+                                },
+                                {
+                                  "idShort": "Parameters",
+                                  "orderRelevant": true,
+                                  "typeValueListElement": "ReferenceElement",
+                                  "value": [
+                                    {
+                                      "idShort": "Workpiece",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Actions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Print_Workpiece"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Parameters"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "Workpiece"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementList"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementList"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementList"
+                },
+                {
+                  "idShort": "Costs",
+                  "orderRelevant": true,
+                  "typeValueListElement": "SubmodelElementList",
+                  "value": [
+                    {
+                      "idShort": "total-cost",
+                      "value": [
+                        {
+                          "idShort": "CostType",
+                          "valueType": "xs:string",
+                          "value": "INCREASE",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "TargetFunction",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Functions"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "total-cost"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        },
+                        {
+                          "idShort": "Parameters",
+                          "orderRelevant": true,
+                          "typeValueListElement": "SubmodelElementList",
+                          "modelType": "SubmodelElementList"
+                        },
+                        {
+                          "idShort": "ArithmeticExpression",
+                          "value": [
+                            {
+                              "idShort": "Type",
+                              "valueType": "xs:string",
+                              "value": "Equation",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "Operator",
+                              "valueType": "xs:string",
+                              "value": "MULTIPLY",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ExpA",
+                              "value": [
+                                {
+                                  "idShort": "FunctionCall",
+                                  "value": [
+                                    {
+                                      "idShort": "TargetFunction",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Functions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "CO2Efficiency"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Parameters",
+                                      "orderRelevant": true,
+                                      "typeValueListElement": "SubmodelElementList",
+                                      "value": [
+                                        {
+                                          "value": [
+                                            {
+                                              "idShort": "Name",
+                                              "valueType": "xs:string",
+                                              "value": "Factory",
+                                              "modelType": "Property"
+                                            },
+                                            {
+                                              "idShort": "Type",
+                                              "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                  {
+                                                    "type": "Submodel",
+                                                    "value": "PlanningDomainMetaData"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Types"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Factory"
+                                                  }
+                                                ]
+                                              },
+                                              "modelType": "ReferenceElement"
+                                            },
+                                            {
+                                              "idShort": "Factory",
+                                              "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                  {
+                                                    "type": "Submodel",
+                                                    "value": "PlanningDomainMetaData"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Actions"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Print_Workpiece"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Parameters"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Factory"
+                                                  }
+                                                ]
+                                              },
+                                              "modelType": "ReferenceElement"
+                                            }
+                                          ],
+                                          "modelType": "SubmodelElementCollection"
+                                        }
+                                      ],
+                                      "modelType": "SubmodelElementList"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementCollection"
+                                },
+                                {
+                                  "idShort": "Type",
+                                  "valueType": "xs:string",
+                                  "value": "FunctionCall",
+                                  "modelType": "Property"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "ExpB",
+                              "value": [
+                                {
+                                  "idShort": "FunctionCall",
+                                  "value": [
+                                    {
+                                      "idShort": "TargetFunction",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Functions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "CO2EfficiencyWeight"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Parameters",
+                                      "orderRelevant": true,
+                                      "typeValueListElement": "SubmodelElementList",
+                                      "modelType": "SubmodelElementList"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementCollection"
+                                },
+                                {
+                                  "idShort": "Type",
+                                  "valueType": "xs:string",
+                                  "value": "FunctionCall",
+                                  "modelType": "Property"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementCollection"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "total-cost",
+                      "value": [
+                        {
+                          "idShort": "CostType",
+                          "valueType": "xs:string",
+                          "value": "INCREASE",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "TargetFunction",
+                          "value": {
+                            "type": "ModelReference",
+                            "keys": [
+                              {
+                                "type": "Submodel",
+                                "value": "PlanningDomainMetaData"
+                              },
+                              {
+                                "type": "SubmodelElementList",
+                                "value": "Functions"
+                              },
+                              {
+                                "type": "SubmodelElementCollection",
+                                "value": "total-cost"
+                              }
+                            ]
+                          },
+                          "modelType": "ReferenceElement"
+                        },
+                        {
+                          "idShort": "Parameters",
+                          "orderRelevant": true,
+                          "typeValueListElement": "SubmodelElementList",
+                          "modelType": "SubmodelElementList"
+                        },
+                        {
+                          "idShort": "ArithmeticExpression",
+                          "value": [
+                            {
+                              "idShort": "Type",
+                              "valueType": "xs:string",
+                              "value": "Equation",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "Operator",
+                              "valueType": "xs:string",
+                              "value": "MULTIPLY",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ExpA",
+                              "value": [
+                                {
+                                  "idShort": "FunctionCall",
+                                  "value": [
+                                    {
+                                      "idShort": "TargetFunction",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Functions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "CostEfficiency"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Parameters",
+                                      "orderRelevant": true,
+                                      "typeValueListElement": "SubmodelElementList",
+                                      "value": [
+                                        {
+                                          "value": [
+                                            {
+                                              "idShort": "Name",
+                                              "valueType": "xs:string",
+                                              "value": "Factory",
+                                              "modelType": "Property"
+                                            },
+                                            {
+                                              "idShort": "Type",
+                                              "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                  {
+                                                    "type": "Submodel",
+                                                    "value": "PlanningDomainMetaData"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Types"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Factory"
+                                                  }
+                                                ]
+                                              },
+                                              "modelType": "ReferenceElement"
+                                            },
+                                            {
+                                              "idShort": "Factory",
+                                              "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                  {
+                                                    "type": "Submodel",
+                                                    "value": "PlanningDomainMetaData"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Actions"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Print_Workpiece"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementList",
+                                                    "value": "Parameters"
+                                                  },
+                                                  {
+                                                    "type": "SubmodelElementCollection",
+                                                    "value": "Factory"
+                                                  }
+                                                ]
+                                              },
+                                              "modelType": "ReferenceElement"
+                                            }
+                                          ],
+                                          "modelType": "SubmodelElementCollection"
+                                        }
+                                      ],
+                                      "modelType": "SubmodelElementList"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementCollection"
+                                },
+                                {
+                                  "idShort": "Type",
+                                  "valueType": "xs:string",
+                                  "value": "FunctionCall",
+                                  "modelType": "Property"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            },
+                            {
+                              "idShort": "ExpB",
+                              "value": [
+                                {
+                                  "idShort": "FunctionCall",
+                                  "value": [
+                                    {
+                                      "idShort": "TargetFunction",
+                                      "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                          {
+                                            "type": "Submodel",
+                                            "value": "PlanningDomainMetaData"
+                                          },
+                                          {
+                                            "type": "SubmodelElementList",
+                                            "value": "Functions"
+                                          },
+                                          {
+                                            "type": "SubmodelElementCollection",
+                                            "value": "CostEfficiencyWeight"
+                                          }
+                                        ]
+                                      },
+                                      "modelType": "ReferenceElement"
+                                    },
+                                    {
+                                      "idShort": "Parameters",
+                                      "orderRelevant": true,
+                                      "typeValueListElement": "SubmodelElementList",
+                                      "modelType": "SubmodelElementList"
+                                    }
+                                  ],
+                                  "modelType": "SubmodelElementCollection"
+                                },
+                                {
+                                  "idShort": "Type",
+                                  "valueType": "xs:string",
+                                  "value": "FunctionCall",
+                                  "modelType": "Property"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementCollection"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementList"
+                },
+                {
+                  "idShort": "Durations",
+                  "orderRelevant": true,
+                  "typeValueListElement": "SubmodelElementList",
+                  "modelType": "SubmodelElementList"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementList"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

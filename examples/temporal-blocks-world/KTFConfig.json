@@ -1,0 +1,58 @@
+{
+  "consumerConfiguration": {
+    "consumer": "aas",
+    "aas": [
+      {
+        "aasFilePath": "temporal-blocks-world-aas",
+        "dataFormat": "JSON",
+        "aasName": "KTF_Planning_Domain",
+        "smPlanningDomainName": "PlanningDomainMetaData",
+        "stringDefinitions": {
+          "smlTypeName": "Types",
+          "smlActionsName": "Actions",
+          "smlPredicateName": "Predicates",
+          "smlPlanningConstants": "PlanningConstants",
+          "smlFunctions": "Functions",
+          "smlFunctionInitialValues": "FunctionValues",
+          "smlMetric": "Metrics",
+          "smlPlanningObjects": "PlanningObjects",
+          "smlInitialState": "InitialState",
+          "smlGoalState": "GoalState"
+        }
+      }
+    ]
+  },
+
+  "producerConfiguration":  {
+    "producer": "pddl",
+    "domainFilePath": "domain.pddl",
+    "problemFilePath": "problem.pddl"
+  },
+  
+  "domainType": "TEMPORAL",
+
+  "planningObjects": [
+    ["a", "block"],
+    ["b", "block"],
+    ["c", "block"]
+  ],
+  "initialState": [
+    ["onground", "b"],
+    ["onground", "a"],
+    ["on", "c", "b"],
+    ["topClear", "c"],
+    ["topClear", "a"]
+  ],
+  "goalState": [
+    ["onground", "c"],
+    ["on", "b", "c"],
+    ["on", "a", "b"]
+  ],
+
+  "metric": "",
+
+  "domainName": "temporal-blocksworld_domain",
+  "problemName": "temporal-blocksworld_problem",
+
+  "printConfiguration": true
+}
